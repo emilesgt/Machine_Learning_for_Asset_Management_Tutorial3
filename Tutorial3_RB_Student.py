@@ -56,7 +56,7 @@ def constr_fun(w, riskTarget, covMatrix):
     return con_val
 
 def constr_jac(w, riskTarget, covMatrix):
-    _, jac = constr_volatility(w, riskTarget, covMatrix)
+    jac = constr_volatility(w, riskTarget, covMatrix)
     return jac
 
 
